@@ -6,18 +6,21 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0;}main{display:
 :root {
   --blanco: #fff;
   --negro: rgb(24,16,16);
+  --footer-color: #2c3e50;
 }
 
 /* Estilos generales */
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 .skew-abajo {
   position: absolute;
   bottom: 0;
   left: 0;
+  z-index: 10;
   border-width: 0 0 35vh 100vw;
   border-style: solid;
   border-color: transparent transparent var(--blanco) transparent;
@@ -195,4 +198,60 @@ header img {
   height: 140px;
   object-fit: cover;
   border-radius: 100%;
+}
+
+.fondo {
+  position: relative;
+  height: 900px;
+  background: url(../img/3.jpg) center fixed;
+  overflow: hidden;
+}
+
+.fondo .contenedor {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  padding-top: 130px;
+  background: rgba(0, 0, 0, .5);
+}
+
+.fondo .skew-abajo {  
+  border-color: transparent transparent var(--footer-color) transparent;
+}
+
+.titulo-cliente, .subtitulo-cliente {
+  color: var(--blanco);
+  text-align: center;
+  z-index: 2;
+}
+
+.titulo-cliente{
+  font-size: 56px;
+  margin-top: 48px;
+}
+.subtitulo-cliente {
+  margin-bottom: 64px;
+  font-size: 24;
+  font-weight: 300;
+}
+
+.clientes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 64px;
+}
+
+.cliente {
+  width: 30%;
+}
+
+.cliente img {
+  width: 100%;
+}
+
+footer {
+  background: var(--footer-color);
+  color: var(--blanco);
 }
