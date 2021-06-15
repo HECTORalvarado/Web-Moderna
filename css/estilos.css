@@ -7,6 +7,8 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0;}main{display:
   --blanco: #fff;
   --negro: rgb(24,16,16);
   --footer-color: #2c3e50;
+  --titulo-fuente: 'Baloo Tammudu 2', cursive;
+  --parrafo-fuente: 'Noto Sans', sans-serif;
 }
 
 /* Estilos generales */
@@ -85,15 +87,18 @@ header img {
 }
 
 .texto{
+  font-family: var(--parrafo-fuente);
   width: 50%;
   color: var(--blanco);
 }
 
 .texto h1{
+  font-family: var(--titulo-fuente);
   font-size: 60px;
 }
 
 .texto h2{
+  font-family: var(--titulo-fuente);
   font-size: 30px;
 }
 
@@ -122,6 +127,7 @@ header img {
 }
 
 .sobre-nosotros {
+  font-family: var(--titulo-fuente);
   font-size: 56px;
   margin-bottom: 10px;
   font-weight: 600px;
@@ -130,6 +136,7 @@ header img {
 
 .slogan {
   margin-bottom: 24px;
+  font-family: var(--titulo-fuente);
   font-size: 24px;
   font-weight: 300;
   text-align: center;
@@ -137,6 +144,7 @@ header img {
 
 .parrafo {
   margin-bottom: 13px;
+  font-family: var(--parrafo-fuente);
   font-weight: 300;
   text-align: justify;
   line-height: 24px;
@@ -220,6 +228,7 @@ header img {
 }
 
 .titulo-cliente, .subtitulo-cliente {
+  font-family: var(--titulo-fuente);
   color: var(--blanco);
   text-align: center;
   z-index: 2;
