@@ -7,7 +7,7 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0;}main{display:
   --blanco: #fff;
   --negro: rgb(24,16,16);
   --footer-color: #2c3e50;
-  --titulo-fuente: 'Baloo Tammudu 2', cursive;
+  --titulo-fuente: 'Baloo Tammudu 2', sans-serif, cursive;
   --parrafo-fuente: 'Noto Sans', sans-serif;
 }
 
@@ -52,6 +52,7 @@ nav{
   position: absolute;
   top: 20px;
   left: 20px;
+  z-index: 2;
 }
 
 nav a{
