@@ -115,6 +115,36 @@ header img {
   border-radius: 16px;
 }
 
+/* Menú de navegación */
+
+#icono {
+  position: relative;
+  z-index: 1;
+}
+
+.enlaces {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background: #C04848;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #480048, #C04848);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #480048, #C04848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  transition: 1s all ease;
+}
+
+.uno {
+  clip-path: circle(0% at 0 0);
+}
+
+.dos {
+  clip-path: circle(150% at 0 0);
+}
 
 /* Estilos main */
 
