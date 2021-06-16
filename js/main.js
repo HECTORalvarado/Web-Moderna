@@ -4,6 +4,7 @@ let MostrarMenu = false;
 
 
 boton.addEventListener('click', e=>{
+  e.preventDefault();
   if (MostrarMenu == false) {
     enlaces.className = ('enlaces dos');
     MostrarMenu = true;

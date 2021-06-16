@@ -49,10 +49,10 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0;}main{display:
 /* Header */
 
 nav{
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 20px;
-  z-index: 2;
+  z-index: 20;
 }
 
 nav a{
@@ -120,7 +120,8 @@ header img {
 
 #icono {
   position: relative;
-  z-index: 1;
+  z-index: 21;
+  text-shadow: 1px 1px 10px #000;
 }
 
 .enlaces {
@@ -385,4 +386,91 @@ form input[type=submit]:hover {
 .fotografos a {
   font-weight: lighter;
   font-style: italic;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 900px) {
+  .container img {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .texto {
+    width: 100%;
+    text-align: center;
+  }
+  .container img {
+    margin-top: 30px;
+    height: 270px;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+  .card {
+    width: 90%;
+  }
+
+  .fondo .contenedor {
+    padding-top: 200px;
+  }
+
+  form input, form textarea {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .container{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .container h1 {
+    font-size: 45px;
+  }
+  .container img {
+    margin-top: 30px;
+    height: 270px;
+  }
+
+  .texto {
+    width: 100%;
+    text-align: center;
+  }
+
+  .fondo {
+    height: auto;
+  }
+  
+  .fondo .contenedor {
+    padding: 180px 0;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+  .card {
+    width: 90%;
+  }
+  .clientes{
+    justify-content: center;
+  }
+  .cliente {
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  form input, form textarea {
+    width: 100%;
+  }
+  .fotografos {
+    grid-template-columns: 1fr;
+  }
 }
