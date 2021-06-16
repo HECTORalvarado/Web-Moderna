@@ -260,7 +260,98 @@ header img {
   width: 100%;
 }
 
+/* Footer */
+
 footer {
+  padding: 32px 0;
   background: var(--footer-color);
+}
+
+footer h3 {
+  margin: 10px 0;
+  font-family: var(--titulo-fuente);
   color: var(--blanco);
+  text-align: center;
+}
+
+/* Formulario */
+
+form {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0;
+  color: var(--blanco);
+  text-align: left;
+}
+
+form h2 {
+  font-family: var(--titulo-fuente);
+  font-size: 40px;
+  text-align: center;
+}
+
+form div {
+  padding: 10px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+form label {
+  font-family: var(--titulo-fuente);
+  font-size: 24px;
+}
+
+form input, form textarea{
+  width: 700px;
+  margin-top: 5px;
+  padding: 20px;
+  background: rgba(0, 0, 0, .5);
+  font-family: var(--parrafo-fuente);
+  color: var(--blanco);
+  border: none;
+  outline: none;
+  border-radius: 8px;
+}
+
+form input {
+  height: 32px;
+}
+
+form input[type=submit] {
+  font-family: var(--titulo-fuente);
+  font-size: 26px;
+  line-height: 13px;
+}
+
+form input[type=submit]:hover {
+  cursor: pointer;
+}
+
+/* Creditos Fotografias */
+
+.fotografos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  text-align: center;
+}
+
+
+.fotografos, .fotografos a {
+  color: var(--blanco);
+  font-family: var(--parrafo-fuente);
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.creditos h3 {
+  margin-top: 44px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.fotografos a {
+  font-weight: lighter;
+  font-style: italic;
 }
